@@ -12,7 +12,7 @@ chrome.contextMenus.create({
     contexts: ['selection'], 
     onclick: function(params)
     {
-        chrome.tabs.create({url: 'https://www.baidu.com/s?ie=utf-8&wd=' + encodeURI(params.selectionText)});
+        chrome.tabs.create({url: 'https://www.google.com/search?q=' + encodeURI(params.selectionText)});
     }
 });
 
@@ -30,7 +30,7 @@ chrome.contextMenus.create({
     contexts: ['selection'], 
     onclick: function(params)
     {
-        chrome.tabs.create({url: 'https://www.google.com.hk/search?q=site:v2ex.com/t%20' + encodeURI(params.selectionText)});
+        chrome.tabs.create({url: 'https://www.google.com/search?q=site:v2ex.com/t%20' + encodeURI(params.selectionText)});
     }
 });
 
